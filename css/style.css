@@ -337,7 +337,7 @@ header {
 */
 
 /*=====================================================================================
-================================* COMMON STRUCTURE *===================================
+================================* STRUCTURE *==========================================
 ==================================================================================== */
 
 .marketing {
@@ -551,10 +551,9 @@ padding: 5px;
 
 /* ================ Pricing page styles =================== */
 
-.pricingnav ul {
+.pricingnav ul { /*changed on 01.05.2015*/
   margin:0 0 30px 0;
   line-height:24px;
-  text-transform:uppercase;
   text-align:center;
   list-style:none;
   }
@@ -563,18 +562,18 @@ padding: 5px;
 .pricingnav li a {
   display:inline;
   margin:0 10px;
-  font-size:18px;
+  font-size:20px;
   font-weight:400;
   color:#333333;
   }
 
 .pricingnav li.page-current a {
-  background: url(../img/pricing-nav-current.png) 50% 100% no-repeat; 
-  padding-bottom:15px;
+  background: url(../img/pricing-nav-current-2.png) 50% 100% no-repeat; 
+  padding-bottom:10px;
   } 
 
 .pricingcol {
-  margin:5px;
+  margin:0px;  /*changed on 01.05.2015*/
   padding:0px;
   border: 1px solid #e4e4e4;
   background-color:#fff;
@@ -609,7 +608,7 @@ padding: 5px;
 
 p.hrule {
   margin:10px 5px;
-  border-top:1px solid #cccccc;
+  border-top:1px dotted #cccccc;
   }
 
 .pricingcol p {
@@ -693,7 +692,8 @@ vertical-align:middle;
   }
 
 .pricing-table > thead > tr > th {
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 18px;
   padding: 10px 8px;
   }
 
@@ -703,14 +703,25 @@ vertical-align:middle;
   }
   
 .pricing-table tbody tr th span {
-color: #989898;
-display:block;
-}  
+  color: #989898;
+  display:block;
+  font-weight: 300;
+  font-size: 15px;
+  }  
+
+.pricing-table > tbody > tr > th {
+  font-size: 18px;
+  font-weight: 400;
+  }
+
+.pricing-table tr.wide {
+background-color: #bebebe;
+width: 100%;
+}
 
 .pricing-table tr.wide th {
   text-transform:uppercase;
-  background-color:#ffffff;
-  color:#10a0d2;
+  background-color:#bebebe;
   font-weight: 400;
   font-size: 16px;
   }
@@ -725,15 +736,15 @@ display:block;
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-background-color: #10a0d2;
-color: #ffffff;
-}
+  background-color: #10a0d2;
+  color: #ffffff;
+  }
 
 .nav-pills > li > a {
-border-radius: 0px;
-padding: 10px;
-color: #10a0d2;
-}
+  border-radius: 0px;
+  padding: 10px;
+  color: #10a0d2;
+  }
 
 #navsecond.affix {
  position: fixed;
@@ -744,9 +755,9 @@ color: #10a0d2;
   }  
 
 .featurenav {
-padding-top: 10px;
-padding-bottom: 10px;
-}
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
 
 
 /* ================ Contact Us page styles =================== */
@@ -901,10 +912,10 @@ padding-bottom: 10px;
   }
   
 .btn-blue.big {
-  padding:15px 35px;
+  padding:7px 35px;
   margin-top:20px;
   margin-bottom:20px;
-  font-size:22px;
+  font-size:18px;
   font-weight:normal;
   } 
 
