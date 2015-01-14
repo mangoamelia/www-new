@@ -77,17 +77,17 @@ code {
 
 input,
 textarea{
-    color: #333333;
-    padding: 9px 7px 7px;
-    width: 195px;
-    border: 1px solid #ddd;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
-    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
-    box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
-}
+  color: #333333;
+  padding: 9px 7px 7px;
+  width: 195px;
+  border: 1px solid #ddd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+  }
 
 /*=====================================================================================
 ================================* NAVBAR *=============================================
@@ -105,7 +105,7 @@ header {
   }  
 
 .supra {
-  background-color: #e8e8e8;
+  background-color: #999999;
   height: 40px;
   color: #fff;
   text-align: right;
@@ -188,7 +188,8 @@ header {
   font-weight:600;
   }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active {
   color: #f16000;
   }
 
@@ -363,6 +364,10 @@ header {
   background-color: #f4f4f4;
   }
 
+.green {
+  color: #86a333;
+  }
+
 .gradient {
   background: rgba(215,86,0,1);
   background: -moz-linear-gradient(-45deg, rgba(215,86,0,1) 0%, rgba(255,113,19,1) 81%, rgba(255,113,19,1) 100%);
@@ -423,37 +428,14 @@ header {
   }
   
 .float {
-margin: 0 auto;
-text-align: center;
-background-color: #f4f4f4;
-}
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f4f4f4;
+  }
 
 .float iframe {
-display:inline-block;
-padding: 5px;
-}
-
-/*=====================================================================================
-================================* PAGES *==============================================
-==================================================================================== */
-.sectionheading {
-  text-align:center;
-  }
-
-.sectionheading h2 {
-  font-size:42px;
-  font-weight:normal;
-  padding: 25px 0px;
-  margin-top: 0px;
-  letter-spacing: 1px;
-  font-family: 'Open Sans';
-  color: #606060;
-  }
-
-.section {
-  font-family: 'Open Sans';
-  font-size : 22px;
-  line-height : 1.6em;
+  display:inline-block;
+  padding: 5px;
   }
 
 .icon {
@@ -491,6 +473,44 @@ padding: 5px;
 .exo {
   font-family: 'Exo Light', Tahoma, Geneva, Sans-serif;
   }
+  
+img.feat {
+  box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
+  border:1px solid #cccccc;
+  }
+ 
+.inset {
+  background-color: #f4f4f4;
+  }
+
+.inset h4 {
+  margin-left: 5px;
+  line-height: 60px;
+  }
+
+.inset img {
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 5px;
+  height: 50px;
+  float:left;
+  }
+  
+img.team {
+  border-radius:50%;
+  border: 2px solid #86a333;
+  background-color: #86a333;
+  padding: 5px;
+  margin-top:20px;
+  } 
+
+
+/*=====================================================================================
+================================* PAGES *==============================================
+==================================================================================== */
 
 
 /* ================ Index page styles =================== */
@@ -670,11 +690,11 @@ p.tiny {
   }
 
 .pricing-table {
-border-bottom: 2px solid #dddddd;
-box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
+  border-bottom: 2px solid #dddddd;
+  box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
-}
+  }
 
 .pricing-table,
 .pricing-table th,
@@ -683,11 +703,19 @@ box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
   font-weight:400;
   vertical-align:middle;
   }
+
+
+.pricing-table .semi th,
+.pricing-table .semi td {
+  font-weight: 600;
+  font-size: 15px;
+  }
+
   
 .pricing-table > tbody > tr > td {
-text-align:center;
-vertical-align:middle;
-}  
+  text-align:center;
+  vertical-align:middle;
+  }  
 
 .pricing-table td.even,
 .pricing-table th.even {
@@ -703,18 +731,19 @@ vertical-align:middle;
 .pricing-table th.plan {
   color: #f16000;
   text-align:center;
+  font-size: 18px;
   }
   
 .pricing-table tbody tr th span {
-  color: #989898;
+  color: #333333;
   display:block;
   font-weight: 300;
   font-size: 15px;
   }  
 
 .pricing-table > tbody > tr > th {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 600;
   }
 
 .pricing-table tr.wide {
@@ -723,10 +752,11 @@ width: 100%;
 }
 
 .pricing-table tr.wide th {
-  text-transform:uppercase;
+  text-transform:none;
   background-color:#bebebe;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 15px 10px;
   }
 
 .pricing-table .glyphicon-ok {
@@ -902,11 +932,11 @@ width: 100%;
   }
 
 .btn-blue:hover {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #10a0d2), color-stop(1, #10a0d2) );
-  background:-moz-linear-gradient( center top, #10a0d2 5%, #10a0d2 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#10a0d2', endColorstr='#10a0d2');
-  background-color:#10a0d2;
-  color: #cccccc;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1cb8ee), color-stop(1, #1cb8ee) );
+  background:-moz-linear-gradient( center top, #1cb8ee 5%, #1cb8ee 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1cb8ee', endColorstr='#1cb8ee');
+  background-color:#1cb8ee;
+  color: #ffffff;
   }
 
 .btn-blue:active {
@@ -930,7 +960,8 @@ width: 100%;
   }
 
 .btn-white:hover {
-  color: #cccccc;
+  color: #10a0d2;
+  background-color: #eaeaea;
   }
 
 .btn-white:active {
@@ -969,10 +1000,10 @@ width: 100%;
   }
 
 .social {
-margin: 0 auto;
-text-align:center;
-padding: 10px 0px;
-}
+  margin: 0 auto;
+  text-align:center;
+  padding: 10px 0px;
+  }
 
 .social img {
   display:inline-block;
