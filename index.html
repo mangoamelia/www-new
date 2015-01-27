@@ -5,7 +5,7 @@
 		<link rel="shortcut icon" href="./img/favicon.png">
 		
 		<!-- Title -->
-		<title>3scale APIcast | Cloud hosted API gateway</title>    
+		<title>3scale API Management</title>    
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="./css/bootstrap.css" type="text/css" media="screen" />
@@ -374,16 +374,24 @@
 =========== Bootstrap Core js ====================
 ================================================== -->
     <!-- faster load time at bottom -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script> <!-- fallback -->
-    <script src="./js/bootstrap.js"></script> <!-- fallback -->
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> // included in wordpress -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> <!-- keep (CDN version) -->
+    <!-- <script type="text/javascript" src="./js/bootstrap.min.js"></script> //remove, use non-minified local -->
+    <script type="text/javascript" src="./js/bootstrap.js"></script> <!-- // keep for custom dropdowns etc. -->
+    <script type="text/javascript" src="./js/modernizr.min.js"></script>
     
     <!-- Nav.js for custom supra -->
-    <script src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    
+    <!-- Platform Features only
+    <script type="text/javascript" src="./js/skrollr.js"></script>
+   	<script type="text/javascript">
+    var s = skrollr.init();
+    </script> -->
+
     
     <!-- Index page only -->
-    <script src="./js/randomlogos.js"></script>
+    <script type="text/javascript" src="./js/randomlogos.js"></script>
     
 <!-- ///// please see note #6 -->
 
